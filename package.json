@@ -1,0 +1,23 @@
+{
+  "name": "capnp-js-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "capnp": "PATH=$PATH:./node_modules/capnp-js-plugin/bin/ capnpc -ojs capnp/basic.capnp",
+    "build": "npm run clean && npm run capnp && ./node_modules/.bin/gulp build",
+    "clean": "rm -rf lib",
+    "test": "./node_modules/.bin/mocha ./tests"
+  },
+  "author": "Tim Popham",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.4",
+    "gulp-nodefy": "0.0.0",
+    "gulp-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "mocha": "^1.21.4"
+  }
+}
