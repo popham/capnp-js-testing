@@ -1,7 +1,7 @@
 {
   "name": "capnp-js-test",
   "version": "0.0.0",
-  "description": "",
+  "description": "Capnproto Javascript tests.",
   "main": "index.js",
   "scripts": {
     "capnp": "PATH=$PATH:./node_modules/capnp-js-plugin/bin/ capnpc -ojs capnp/basic.capnp",
