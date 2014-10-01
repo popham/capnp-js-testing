@@ -4,7 +4,7 @@
   "description": "Capnproto Javascript tests.",
   "main": "index.js",
   "scripts": {
-    "capnp": "PATH=$PATH:./node_modules/capnp-js-plugin/bin/ capnpc -ojs capnp/basic.capnp",
+    "capnp": "capnpc -ojs capnp/basic.capnp",
     "build": "npm run clean && npm run capnp && ./node_modules/.bin/gulp build",
     "clean": "rm -rf lib",
     "test": "./node_modules/.bin/mocha ./tests"
@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "capnp-js": "0.0.0",
-    "capnp-js-plugin": "0.0.4",
+    "capnp-js-plugin": "0.0.5",
     "gulp": "^3.8.8",
     "gulp-jshint": "^1.8.4",
     "gulp-nodefy": "0.0.0",
